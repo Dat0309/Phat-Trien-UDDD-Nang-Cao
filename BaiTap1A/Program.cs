@@ -26,6 +26,8 @@ namespace BaiTap1A
             Console.WriteLine("===========================================");
             Console.WriteLine(string.Format("Ten nguoi dung: {0} \n SDT: {1} \n Tuoi: {2} \n Gioi tinh: {3} \n",name,phone,age,genre?"Nam":"Nu"));
             Console.WriteLine("XIN CAM ON!!!");
+
+            Console.ReadKey();
         }
     }
 }
