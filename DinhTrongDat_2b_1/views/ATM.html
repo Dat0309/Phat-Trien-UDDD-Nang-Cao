@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+		<div class="header">
+			<h2>Đăng nhập</h2>
+		</div>
+		<form id="form" class="form">
+			<div class="form-control">
+				<label for="username">Email</label>
+				<input type="email" placeholder="1914775@dlu.edu.vn" id="email" />
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="username">Mật khẩu</label>
+				<input type="password" placeholder="matkhaune" id="password"/>
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error message</small>
+			</div>
+			<button class="login-btn">Đăng nhập</button>
+		</form>
+	</div>
+	
+	
+	<!-- SOCIAL PANEL HTML -->
+	<div class="social-panel-container">
+		<div class="social-panel">
+			<p>Tạo<i class="fa fa-heart"></i>bởi
+				<a target="_blank" href="https://github.com/Dat0309">Trọng Đạt</a></p>
+			<button class="close-btn"><i class="fas fa-times"></i></button>
+			<h4>Chi tiết</h4>
+			<ul>
+				<li>
+					<a href="https://github.com/Dat0309" target="_blank">
+						<i class="fab fa-discord"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/toiladat.39" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<button class="floating-btn">
+		Chạm khẽ tim anh một chúc
+	</button>
+	
+	<div class="floating-text">
+		Thực hành buổi 2 học phần <a href="https://mobile-course.web.app/" target="_blank">#PTUDDDNC</a>
+	</div>
+	<script src="/controller/validation.js"></script>
+	<script src="/model/user.js"></script>
+</body>
+</html>
