@@ -1,15 +1,19 @@
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
+const h1 = document.getElementById('title-user');
+
 var isValidEmail = false;
 var isValidPass = false;
 
-function user(email, password){
+function user(name, email, password, money){
+    this.name = name;
     this.email = email;
     this.password = password;
+    this.money = money;
 }
 
-var d = new user("dat@gmail.com", "123456");
+var d = new user("Đinh Trọng Đạt" ,"dat@gmail.com", "123456", 5000000);
 
 form.addEventListener('submit', e => {
     e.preventDefault();
