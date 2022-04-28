@@ -1,0 +1,39 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1>Đăng nhập</h1>
+    <img src="assets/dlu.jpg" />
+  </div>
+
+  <form [formGroup]="form" id="form" >
+    <ion-item class="ion-margin-bottom">
+      <ion-input id="email" placeholder="Email" formControlName="email">
+        
+      </ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-input id="password" placeholder="Mật khẩu" type="password" formControlName="password">
+        
+      </ion-input>
+    </ion-item>
+    <ion-button expand="block" shape="round" type="submit" (click)="login()" [disabled]="!form.valid">Đăng nhập</ion-button>
+    <ion-button expand="block" shape="round" type="submit" (click)="addAccount()" [disabled]="!form.valid">Thêm</ion-button>
+    <ion-button expand="block" shape="round" type="submit"  [disabled]="!form.valid">Xoá</ion-button>
+    <ion-button expand="block" shape="round" type="submit" (click)="getAllAccount()" >Xem tất cả</ion-button>
+    <ion-button expand="block" shape="round" type="submit" (click)="openCam()" >Open Camera</ion-button>
+    <ion-button expand="block" shape="round" type="submit" (click)="openMap()" >Open Map</ion-button>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="ion-text-center">
+    <ion-text color="medium">
+      copyright © 2022 Dinh Trong Dat
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>

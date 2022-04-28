@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Hệ thống ATM
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Hệ thống ATM</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <p id="email">{{user.email}}</p>
+    <ion-buttons id="btn">
+      <ion-button routerLink="detail">
+        Xem thông tin cá nhân
+      </ion-button>
+    </ion-buttons>
+  </div>
+</ion-content>
